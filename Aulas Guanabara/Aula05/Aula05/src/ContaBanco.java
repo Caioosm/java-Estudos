@@ -12,7 +12,7 @@ public class ContaBanco {
         this.status = false;
     }
 
-    //Métodos especciais conta
+    //Métodos especiais conta
     public int getNumConta(){
         return this.numConta;
     }
@@ -20,7 +20,7 @@ public class ContaBanco {
     public void setNumConta(int n){
         this.numConta = n;
     }
-    //Métodos especciais tipo conta
+    //Métodos especiais tipo conta
     public String getTipoConta(){
         return this.tipo;
     }
@@ -28,7 +28,7 @@ public class ContaBanco {
     public void setTipoConta(String t){
         this.tipo = t;
     }
-    //Métodos especciais dono
+    //Métodos especiais dono
     public String getDono(){
         return this.dono;
     }
@@ -36,7 +36,7 @@ public class ContaBanco {
     public void setDono(String d){
         this.dono = d;
     }
-    //Métodos especciais saldo
+    //Métodos especiais saldo
     public float getSaldo(){
         return this.saldo;
     }
@@ -44,7 +44,7 @@ public class ContaBanco {
     public void setSaldo(float sald){
         this.saldo = sald;
     }
-    //Métodos especciais Status
+    //Métodos especiais Status
     public boolean getStatus(){
         return this.status;
     }
@@ -52,7 +52,7 @@ public class ContaBanco {
     public void setStatus(boolean stts){
         this.status = stts;
     }
-    //Métodos especciais Abrido
+    //Métodos especiais Abrido
     public boolean getAbrida(){
         return this.abrida;
     }
@@ -61,13 +61,13 @@ public class ContaBanco {
         this.abrida = aberto;
     }
 
-    public void Conta(){
-        System.out.println("Número da conta: " + this.getNumConta());
-        System.out.println("Tipo da conta: " + this.getTipoConta());
-        System.out.println("Dono da conta: " + this.getDono());
-        System.out.println("Saldo da conta: " + this.getSaldo());
-        System.out.println("Status da conta: " + this.getStatus());
-    }
+    // public void Conta(){
+    //     System.out.println("Número da conta: " + this.getNumConta());
+    //     System.out.println("Tipo da conta: " + this.getTipoConta());
+    //     System.out.println("Dono da conta: " + this.getDono());
+    //     System.out.println("Saldo da conta: " + this.getSaldo());
+    //     System.out.println("Status da conta: " + this.getStatus());
+    // }
 
     public void AbrirConta(String t){
         this.setTipoConta(t);
@@ -111,7 +111,9 @@ public class ContaBanco {
     }
 
     public void pagarMensal(){
+
         float v = 0;
+
         if(this.getTipoConta() == "CC"){
             v = 12;
         }else if(this.getTipoConta() == "CP"){
