@@ -8,6 +8,12 @@ public class Principal {
         L[4] = new Lutador("UFOCobol", "Brasil", 37, 1.70f, 119.3f, 5, 4,3); 
         L[5] = new Lutador("Nerdaart", "EUA", 30, 1.81f, 105.7f, 12, 2,4); 
 
-        L[3].status();
+        // L[3].status();
+
+        Luta UEC01 = new Luta();
+
+        UEC01.marcarLuta(L[0], L[1]);
+        UEC01.lutar();
+        
     }
 }
