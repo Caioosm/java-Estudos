@@ -12,8 +12,10 @@ public class Principal {
 
         Luta UEC01 = new Luta();
 
-        UEC01.marcarLuta(L[0], L[1]);
+        UEC01.marcarLuta(L[4], L[5]);
         UEC01.lutar();
+        L[0].status();
+        L[1].status();
         
     }
 }
