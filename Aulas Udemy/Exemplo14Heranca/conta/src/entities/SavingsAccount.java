@@ -25,7 +25,7 @@ public class SavingsAccount extends Account{
     }
 
     @Override
-    public void saqque(double amount){
+    public final void saqque(double amount){
         balance -= amount;
     }
 }
